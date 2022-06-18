@@ -1,0 +1,119 @@
+:root {
+    --border-color: #aeb0b18c;
+    --background-color: #fafafa;
+    --text-gray: #8e8e8e;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup .popup-overlay {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.popup .popup-card {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 9999;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+}
+
+.popup-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid var(--border-color);
+    ;
+}
+
+.popup-card__body {
+    height: calc(100% - 52px);
+}
+
+.popup-card__header .card_title {
+    font-weight: 600;
+}
+
+.popup-card_item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.popup-card_item__image {
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.popup-card_item:hover {
+    background-color: var(--background-color);
+}
+
+.popup-card_item__image img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+/* confirmPopup */
+.popup .confirm_popup-card {
+    max-width: 450px;
+    max-height: 300px;
+    background-color: white;
+    z-index: 9999;
+    border-radius: 10px;
+}
+
+.confirm_popup_head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.confirm_popup_head .popup_title {
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.confirm_popup_head .title_content {
+    color: var(--text-gray);
+}
+
+.confirm_delete,
+.confirm_exit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm_delete {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.popup-card__list_item {
+    height: 100%;
+    overflow-y: auto;
+}

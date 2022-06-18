@@ -1,0 +1,34 @@
+.notification {
+    max-width: 350px;
+    width: 100%;
+    padding: 5px 5px;
+    background-color: rgb(223, 233, 236);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    /* box-shadow: ; */
+}
+
+.notification.read {
+    background-color: white;
+}
+
+.notice-board {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.notice-board .notification {
+    position: relative;
+    left: unset;
+    bottom: unset;
+}
+
+.notification:hover {
+    background-color: rgb(189, 206, 211);
+}
