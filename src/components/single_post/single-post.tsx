@@ -249,7 +249,7 @@ const SinglePost = (props: SinglePostProps) => {
           </Link>
 
           <FacebookShareButton url={`https://vnexpress.net/bao-thai-lan-khen-u22-viet-nam-4604244.html`}>
-            <button>Chia sẻ</button>
+            <button>Share</button>
           </FacebookShareButton>
         </div>
         <div className="flex gap-2 items-center">
