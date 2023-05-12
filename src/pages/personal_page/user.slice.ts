@@ -8,7 +8,7 @@ import { getListFriendRequets, getListFriends } from '../friend-request/list-fri
 import {
   deleteFriendRequestSelected,
   deleteFriendSelected,
-  friendRequestAcceptSelected,
+  friendRequestAcceptSelected
 } from '../personal_page_selected/personSelected.thunks';
 import { UserInfor } from './user.interface';
 

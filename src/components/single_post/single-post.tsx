@@ -24,6 +24,7 @@ import MediaCustom from '../media/media-custom';
 import PopupListUser from '../navbar/popup-list-user';
 import { deleteReact, postReact } from './react.thunks';
 import './slice.css';
+import { FacebookShareButton } from 'react-share';
 
 const SinglePost = (props: SinglePostProps) => {
   const user = useSelector((state: RootState) => state.user.userInfor);
@@ -246,6 +247,10 @@ const SinglePost = (props: SinglePostProps) => {
           <Link to={`/post-detail/${post._id}`}>
             <FaRegComment fontSize={22} className="transition-all duration-300 hover:-translate-y-1 hover:scale-105" />
           </Link>
+
+          <FacebookShareButton url={`https://vnexpress.net/bao-thai-lan-khen-u22-viet-nam-4604244.html`}>
+            <button>Chia sẻ</button>
+          </FacebookShareButton>
         </div>
         <div className="flex gap-2 items-center">
           {Object.hasOwn(post, 'reacts') && (
