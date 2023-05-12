@@ -248,7 +248,7 @@ const SinglePost = (props: SinglePostProps) => {
             <FaRegComment fontSize={22} className="transition-all duration-300 hover:-translate-y-1 hover:scale-105" />
           </Link>
 
-          <FacebookShareButton url={`https://vnexpress.net/bao-thai-lan-khen-u22-viet-nam-4604244.html`}>
+          <FacebookShareButton url={`${process.env.REACT_APP_FRONTEND}/post-detail/${post._id}`}>
             <button>Share</button>
           </FacebookShareButton>
         </div>
